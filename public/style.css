@@ -533,3 +533,11 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.wrapper {
+  background-color: #FFFEF7;
+}
+
+.navbar {
+  background-color: #FCFAEE;
+}

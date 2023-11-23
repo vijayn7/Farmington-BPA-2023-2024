@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+    background-color: #FFFEF7;
+}
+
+.navbar {
+    background-color: #FCFAEE;
+}
