@@ -47,31 +47,45 @@
 
             <div class="navDropDown open">
                 <li><a href="/">Menu</a></li>
-                    <li><a href="/">Order</a></li>
-                    <li><a href="/">Locations</a></li>
-                    <li><a href="/">Reservations</a></li>
-                    <li><a href="/">Catering</a></li>
-                    <li><a href="/">Contact Us</a></li>
+                <li><a href="/">Order</a></li>
+                <li><a href="/">Locations</a></li>
+                <li><a href="/">Reservations</a></li>
+                <li><a href="/">Catering</a></li>
+                <li><a href="/">Contact Us</a></li>
             </div>
 
         </header>
 
-    </div>
+        <div>
+            <h4 class="text-4xl text-indigo-600">Latest Recipes</h4>
 
-    <script>
-        const toggle_btn = document.querySelector('.toggle_btn')
-        const toggle_btnIcon = document.querySelector('.toggle_btn i')
-        const navDropDown = document.querySelector('.navDropDown')
+            <div>
+                <!-- cards go here -->
+                <div>
+                    <img src="assets/Smash Burger.png" alt="Smash Burger">
+                    <div>
+                        <span>Smash Burger</span>
+                        <span>Juicy beef, melted cheese, and crisp veggies piled between toasted buns—a flavorful, smash-hit burger experience!</span>
+                    </div>
+                </div>
+            </div>
 
-        toggle_btn.onclick = function () {
-            navDropDown.classList.toggle('open')
-            const isOpen = navDropDown.classList.contains('open')
+        </div>
 
-            toggle_btnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-    </script>
+        <script>
+            const toggle_btn = document.querySelector('.toggle_btn')
+            const toggle_btnIcon = document.querySelector('.toggle_btn i')
+            const navDropDown = document.querySelector('.navDropDown')
+
+            toggle_btn.onclick = function () {
+                navDropDown.classList.toggle('open')
+                const isOpen = navDropDown.classList.contains('open')
+
+                toggle_btnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
 
 </body>
 
