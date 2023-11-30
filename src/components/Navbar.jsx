@@ -25,21 +25,21 @@ const Navbar = () => {
             <span>
               <BiRestaurant size={32} />
             </span>
-            <h1 className=" text-xl font-semibold">FoodieWeb</h1>
+            <h1 className=" text-xl font-semibold">Game Day Grill</h1>
           </div>
 
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
             <Link
-              to="home"
+              to="menu"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Home
+              Menu
             </Link>
 
-            <div className="relative group">
+            {/* <div className="relative group">
               <div className=" flex items-center gap-1">
                 <Link
                   to="dishes"
@@ -100,36 +100,46 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <Link
-              to="about"
+              to="order"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              About
+              Order
             </Link>
 
             <Link
-              to="menu"
+              to="reservations"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Menu
+              Reservations
             </Link>
 
             <Link
-              to="review"
+              to="catering"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Reviews
+              Catering
+            </Link>
+
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="hover:text-brightColor transition-all cursor-pointer"
+            >
+              Contact Us
             </Link>
 
             <Button title="Login" />
