@@ -8,6 +8,7 @@ import Dishes from "./components/Dishes";
 import Reviews from "./components/Review";
 import Review from "./components/Review";
 import Cards from "./components/cards";
+import Mission from "./components/Mission";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <div id="#home">
         <Home />
       </div>
+      <Mission />
         <Cards />
         <Footer />
     </div>
