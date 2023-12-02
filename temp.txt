@@ -1,0 +1,27 @@
+<div>
+      <Navbar />
+
+      <main>
+        <div id="home">
+          <Home />
+        </div>
+
+        <div id="dishes">
+          <Dishes />
+        </div>
+
+        <div id="about">
+          <About />
+        </div>
+
+        <div id="menu">
+          <Menu />
+        </div>
+
+        <div id="review">
+          <Review />
+        </div>
+      </main>
+
+      <Footer />
+    </div>

@@ -7,35 +7,12 @@ import Footer from "./components/Footer";
 import Dishes from "./components/Dishes";
 import Reviews from "./components/Review";
 import Review from "./components/Review";
+import Cards from "./components/cards";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-
-      <main>
-        <div id="home">
-          <Home />
-        </div>
-
-        <div id="dishes">
-          <Dishes />
-        </div>
-
-        <div id="about">
-          <About />
-        </div>
-
-        <div id="menu">
-          <Menu />
-        </div>
-
-        <div id="review">
-          <Review />
-        </div>
-      </main>
-
-      <Footer />
+      <Cards />
     </div>
   );
 };
