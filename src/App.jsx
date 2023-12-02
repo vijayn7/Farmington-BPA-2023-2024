@@ -12,7 +12,7 @@ import Cards from "./components/cards";
 const App = () => {
   return (
     <div>
-      <Cards />
+      <Home />
     </div>
   );
 };
