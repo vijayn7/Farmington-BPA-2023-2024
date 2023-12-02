@@ -32,14 +32,14 @@ export const menuItems = [
       name: "Pretzel Bites",
       category: "Appetizer",
       description: "Flash-fried & salted. Served with warm cheese sauce.",
-      price: 9.5
+      price: 9.50
     },
     {
       id: 6,
       name: "Nacho",
       category: "Appetizer",
       description: "Fresh tortilla chips, braised adobo chicken, pico de gallo, corn & bean relish, fresh jalapeños, warm cheese sauce & chili crema.",
-      price: 13.5
+      price: 13.50
     },
     {
       id: 7,
@@ -74,28 +74,28 @@ export const menuItems = [
       name: "Classic Chicken Ceaser",
       category: "Soup & Salad",
       description: "The caesar you know and love with a twist. Fresh romaine tossed in grated parmesan & our signature creamy caesar dressing. Garnished with shaved parmesan and topped with our Cosmik croutons & flame-grilled chicken breast.",
-      price: 13.5
+      price: 13.50
     },
     {
       id: 12,
       name: "Southwest Salad",
       category: "Soup & Salad",
       description: "Mixed greens, cherry tomatoes, queso fresco, corn & bean relish, red onions, fresh jalapeños, avocado, crispy corn tortilla strips & southwest dressing.",
-      price: 11.5
+      price: 11.50
     },
     {
       id: 13,
       name: "BBQ Chicken Cobb",
       category: "Soup & Salad",
       description: "Mixed greens, grilled chicken, chopped bacon, bleu cheese crumbles, cherry tomato, avocado, hard-boiled egg, smoky bbq sauce & buttermilk ranch dressing drizzle, topped with haystacks.",
-      price: 13.5
+      price: 13.50
     },
     {
       id: 14,
       name: "Truffle Fries",
       category: "Fries",
       description: "Tossed in parmesan, parsley, red pepper flakes, and finished with truffle oil. Served with a side of truffle aioli.",
-      price: 8.5
+      price: 8.50
     },
     {
       id: 15,
@@ -109,14 +109,14 @@ export const menuItems = [
       name: "Cheese Fries",
       category: "Fries",
       description: "Beer-battered fries sprinkled with our signature cracked black pepper seasoning. Served with a side of warm cheese sauce.",
-      price: 9.5
+      price: 9.50
     },
     {
       id: 17,
       name: "Summer Bbq Burger",
       category: "Burgers",
       description: "Beef patty, smoked bacon, BBQ brisket, cheddar cheese, grilled jalapeños, smoky bbq sauce & haystacks. Smothered in cheese sauce.",
-      price: 16
+      price: 16.00
     },
     {
       id: 18,

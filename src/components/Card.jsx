@@ -10,7 +10,7 @@ const Card = (props) => {
                     {props.name}
                 </div>
                 <div className="flex items-center gap-2">
-                    <span className="text-[1.5rem]">{props.price}</span>
+                    <span className="text-[1.35rem]">${props.price}</span>
                 </div>
             </div>
             <p className="text-[0.85rem] opacity-70 mb-4">
