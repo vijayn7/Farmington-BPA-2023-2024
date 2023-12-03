@@ -19,10 +19,9 @@ const App = () => {
       <div id="#home">
         <Home />
       </div>
-      <Cards />
-      <Mission />
       <Tabs />
       <Cards />
+      <Mission />
       <Footer />
     </div>
   );
