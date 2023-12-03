@@ -9,7 +9,7 @@ const ButtonGroup = () => {
 
   return (
     <div className="flex font-bold">
-        <div className='outline-dashed outline-offset-2'>
+        <div>
       <button
         className={`px-4 py-2 ${activeButton === 'button1' ? 'bg-secondary' : 'bg-primary'}`}
         onClick={() => handleButtonClick('button1')}

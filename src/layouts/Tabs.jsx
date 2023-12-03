@@ -22,7 +22,7 @@ const Tabs = () => {
 
   return (
     <div className="flex">
-      <div className='bg-fillColor flex outline-dotted outline-primary outline-offset-8 rounded-lg'>
+      <div className='bg-fillColor flex rounded-lg'>
         <Tab
           label="Appetizers"
           isActive={activeTab === 1}
