@@ -16,6 +16,9 @@ import item15Image from "../assets/menu Pictures/15.jpg"
 import item16Image from "../assets/menu Pictures/16.jpg"
 import item17Image from "../assets/menu Pictures/17.jpg"
 import item18Image from "../assets/menu Pictures/18.jpg"
+import brand from "../assets/brand.jpg"
+
+export const logo = brand;
 
 export const menuItems = [
     {
