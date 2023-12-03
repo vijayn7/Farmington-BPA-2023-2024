@@ -7,7 +7,7 @@ const Home = () => {
       <div className="w-full lg:w-2/3 space-y-5">
         <h1 className="text-lightText font-bold text-7xl absolute top-[46rem] left-5">
           Game On, Grill On
-        </h1>bottom-16
+        </h1>
         <div className="lg:pl-44 absolute top-[46rem] right-5">
           <a href="#menu">
             <Button title="View Menu" />
