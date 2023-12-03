@@ -18,9 +18,10 @@ const App = () => {
       <div id="#home">
         <Home />
       </div>
+      <Cards />
       <Mission />
-        <Cards />
-        <Footer />
+
+      <Footer />
     </div>
   );
 };
