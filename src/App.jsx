@@ -9,6 +9,7 @@ import Reviews from "./components/Review";
 import Review from "./components/Review";
 import Cards from "./components/cards";
 import Mission from "./components/Mission";
+import Tabs from "./layouts/tabs";
 
 const App = () => {
   return (
@@ -17,8 +18,9 @@ const App = () => {
         <Home />
       </div>
       <Mission />
-        <Cards />
-        <Footer />
+      <Tabs></Tabs>
+      <Cards />
+      <Footer />
     </div>
   );
 };
