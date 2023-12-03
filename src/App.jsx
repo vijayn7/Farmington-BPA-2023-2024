@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import Mission from "./components/Mission";
 import Tabs from "./layouts/tabs";
+import ButtonGroup from "./layouts/ButtonGroup";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Home />
       </div>
       <Tabs />
+      <ButtonGroup />
       <Cards />
       <Mission />
       <Footer />
