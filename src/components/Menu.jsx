@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonGroup from "../layouts/ButtonGroup";
-import Tabs from "../layouts/tabs";
+import Tabs from "../layouts/Tabs";
 import Cards from "../layouts/Cards"
 
 const Menu = () => {
