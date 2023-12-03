@@ -6,15 +6,21 @@ import Footer from "./components/Footer";
 import Dishes from "./components/Dishes";
 import Reviews from "./components/Review";
 import Review from "./components/Review";
-import Cards from "./components/Cards";
 import Navbar from "./components/Navbar";
+import Cards from "./components/Cards";
+import Mission from "./components/Mission";
+
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Cards />
-      
+      <div id="#home">
+        <Home />
+      </div>
+      <Mission />
+        <Cards />
+        <Footer />
     </div>
   );
 };

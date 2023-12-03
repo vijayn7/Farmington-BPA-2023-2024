@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../layouts/Card";
 import { menuItems } from "./Data";
 
 const Cards = () => {
@@ -10,7 +10,7 @@ const Cards = () => {
 
                     { menuItems.map((item)=> {
                         return (
-                               <Card name={item.name} price={item.price} description={item.description}/>
+                               <Card name={item.name} price={item.price} description={item.description} img={item.img}/>
                         );
                     })}
 
