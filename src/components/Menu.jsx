@@ -5,7 +5,7 @@ import Cards from "../layouts/Cards"
 
 const Menu = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-left items-left lg:px-32 px-5">
+    <div className="min-h-screen flex flex-col justify-left items-left lg:px-32 px-5 pt-16" id="menu">
       <h1 className="text-[6rem]">Menu</h1>
       <ButtonGroup />
       <div className="mt-8">
