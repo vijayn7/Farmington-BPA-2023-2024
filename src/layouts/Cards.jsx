@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../layouts/Card";
-import { menuItems } from "./Data";
+import Card from "./Card";
+import { menuItems } from "../components/Data";
 
 const Cards = () => {
     return (
