@@ -5,7 +5,6 @@ import Locations from "./pages/Locations";
 const App = () => {
   return (
     <div>
-      {/* <Locations /> */}
       <Homepage />
     </div>
   );
