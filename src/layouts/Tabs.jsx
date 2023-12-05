@@ -20,10 +20,6 @@ const Tabs = () => {
     setActiveTab(tabNumber);
   };
 
-  function getActiveTab() {
-    return activeTab;
-  }
-
   return (
     <div className="flex">
       <div className='bg-fillColor flex rounded-lg'>
