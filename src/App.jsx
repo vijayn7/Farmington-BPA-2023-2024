@@ -1,5 +1,6 @@
 import React from "react";
 import Homepage from "./pages/Homepage";
+import Locations from "./pages/Locations";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
@@ -14,8 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route index element={<Homepage />} />
-            <Route path="menu" element={<Menu />} />
-            <Route path="mission" element={<Mission />} />
+            <Route path="locations" element={<Locations />} />
           </Route>
         </Routes>
       </BrowserRouter>
