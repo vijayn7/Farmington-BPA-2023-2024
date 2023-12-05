@@ -13,11 +13,9 @@ const Tab = ({ label, isActive, onClick }) => {
   );
 };
 
-const Tabs = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
+const Tabs = ({ activeTab, onTabChange }) => {
   const handleTabClick = (tabNumber) => {
-    setActiveTab(tabNumber);
+    onTabChange(tabNumber);
   };
 
   return (
