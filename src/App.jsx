@@ -16,7 +16,6 @@ const App = () => {
           <Route path="/" element={<Navbar />}>
             <Route index element={<Homepage />} />
             <Route path="locations" element={<Locations />} />
-            <Route path="mission" element={<Mission />} />
           </Route>
         </Routes>
       </BrowserRouter>
