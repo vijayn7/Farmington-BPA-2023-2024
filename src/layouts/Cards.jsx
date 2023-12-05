@@ -10,7 +10,7 @@ const Cards = () => {
 
                     { menuItems.map((item)=> {
                         return (
-                               <Card name={item.name} price={item.price} description={item.description} img={item.img}/>
+                               <Card key={item.id} name={item.name} price={item.price} description={item.description} img={item.img}/>
                         );
                     })}
 
