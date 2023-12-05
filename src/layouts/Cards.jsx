@@ -14,7 +14,7 @@ const Cards = ({ activeTab }) => {
 
                     {filteredItems.map((item) => {
                         return (
-                            <Card key={item.id} name={item.name} price={item.price} description={item.description} img={item.img} />
+                            <Card key={item.id} name={item.itemName} price={item.price} description={item.description} img={item.img} />
                         );
                     })}
 
