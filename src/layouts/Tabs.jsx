@@ -14,15 +14,24 @@ const Tab = ({ label, isActive, onClick }) => {
 };
 
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
   };
 
+  function getActiveTab() {
+    return activeTab;
+  }
+
   return (
     <div className="flex">
       <div className='bg-fillColor flex rounded-lg'>
+        <Tab
+          label="All"
+          isActive={activeTab === 0}
+          onClick={() => handleTabClick(0)}
+        />
         <Tab
           label="Appetizers"
           isActive={activeTab === 1}
