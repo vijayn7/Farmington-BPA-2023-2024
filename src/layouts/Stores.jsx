@@ -1,5 +1,5 @@
 import React from "react";
-import Store from "./store";
+import Store from "./Store";
 import { locationData } from "../components/Data";
 
 const Stores = () => {
