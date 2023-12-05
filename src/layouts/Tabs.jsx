@@ -53,7 +53,7 @@ const Tabs = () => {
           onClick={() => handleTabClick(4)}
         />
         <Tab
-          label="Deserts"
+          label="Dessert"
           isActive={activeTab === 5}
           onClick={() => handleTabClick(5)}
         />

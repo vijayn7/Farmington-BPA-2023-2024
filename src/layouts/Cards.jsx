@@ -3,6 +3,7 @@ import Card from "./Card";
 import { menuItems } from "../components/Data";
 
 const Cards = () => {
+    // const filteredItems = menuItems.filter(item => item.category === "Entrees");
     return (
         <div className="section m-8" id="recipe">
             <div className="flex flex-col items-center">
