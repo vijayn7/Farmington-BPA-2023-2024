@@ -44,6 +44,24 @@ import brand from "../assets/brand.jpg"
 
 export const logo = brand;
 
+export const foundersData = [
+  {
+    id: 1,
+    name: "Shreyas Narayanan",
+    img: item10Image
+  },
+  {
+    id: 2,
+    name: "Vijay Nannapuraju",
+    img: item11Image
+  },
+  {
+    id: 3,
+    name: "Aiden Cummins",
+    img: item12Image
+  }
+]
+
 export const locationData = [
   {
     id: 1,
