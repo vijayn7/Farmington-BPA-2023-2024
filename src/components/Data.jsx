@@ -40,6 +40,11 @@ import item39Image from "../assets/menu Pictures/39.jpg";
 import item40Image from "../assets/menu Pictures/40.jpg";
 import item41Image from "../assets/menu Pictures/41.jpg";
 import item42Image from "../assets/menu Pictures/42.jpg";
+
+import shreyasImage from "../assets/img/Shreyas.png"
+import vijayImage from "../assets/img/Vijay.png"
+import aidenImage from "../assets/img/Aiden.png"
+
 import brand from "../assets/brand.jpg"
 
 export const logo = brand;
@@ -48,17 +53,17 @@ export const foundersData = [
   {
     id: 1,
     name: "Shreyas Narayanan",
-    img: item10Image
+    img: shreyasImage
   },
   {
     id: 2,
     name: "Vijay Nannapuraju",
-    img: item11Image
+    img: vijayImage
   },
   {
     id: 3,
     name: "Aiden Cummins",
-    img: item12Image
+    img: aidenImage
   }
 ]
 
