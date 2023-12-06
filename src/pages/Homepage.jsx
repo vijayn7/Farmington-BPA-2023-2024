@@ -9,7 +9,9 @@ const Homepage = () => {
   return (
     <div>
       <Home />
-      <Menu />
+      <div id="menu">
+        <Menu />
+      </div>
       <Mission />
       <Footer />
     </div>
