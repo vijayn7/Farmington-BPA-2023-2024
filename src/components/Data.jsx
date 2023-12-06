@@ -46,26 +46,31 @@ export const logo = brand;
 
 export const locationData = [
   {
+    id: 1,
     name: "Farmington Hills",
     address: "32000 Shiawassee St, Farmington, MI 48336",
     phone: "(248) 489-3455"
   },
   {
+    id: 2,
     name: "East Lansing",
     address: "300 Grove St, East Lansing, MI 48823",
     phone: "(248) 489-3455"
   },
   {
+    id: 3,
     name: "Detroit",
     address: "311 Maynard St, Ann Arbor, MI 48104",
     phone: "(248) 489-3455"
   },
   {
+    id: 4,
     name: "Grand Rapids",
     address: "25 Ionia Ave SW, Grand Rapids, MI 49503",
     phone: "(248) 489-3455"
   },
   {
+    id: 5,
     name: "Ann Arbor",
     address: "311 Maynard St, Ann Arbor, MI 48104",
     phone: "(248) 489-3455"

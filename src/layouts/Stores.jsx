@@ -7,7 +7,7 @@ const Stores = () => {
         <div className="">
             {locationData.map((item) => {
                 return (
-                    <Store name={item.name} address={item.address} phone={item.phone}/>
+                    <Store key={item.id} name={item.name} address={item.address} phone={item.phone}/>
                 );
             })}
             <h1>*Reservations are accepted over the phone!</h1>
