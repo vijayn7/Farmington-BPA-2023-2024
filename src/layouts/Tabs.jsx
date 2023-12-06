@@ -19,7 +19,7 @@ const Tabs = ({ activeTab, onTabChange }) => {
   };
 
   return (
-    <div className="flex">
+    <div className="hidden md:flex">
       <div className='bg-fillColor flex rounded-lg'>
         <Tab
           label="All"
