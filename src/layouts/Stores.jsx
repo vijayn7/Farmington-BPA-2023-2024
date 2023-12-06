@@ -10,7 +10,7 @@ const Stores = () => {
                     <Store key={item.id} name={item.name} address={item.address} phone={item.phone}/>
                 );
             })}
-            <h1>*Reservations are accepted over the phone!</h1>
+            <h1 className="text-center lg:text-left">*Reservations are accepted over the phone!</h1>
         </div>
     );
 };
