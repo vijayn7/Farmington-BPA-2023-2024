@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Mission from "./components/Mission";
 import Navbar from "./components/Navbar";
+import BackToTopButton from "./components/BackToTopButton"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
+      <BackToTopButton />
     </div>
   );
 };
