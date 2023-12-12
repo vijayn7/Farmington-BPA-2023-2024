@@ -9,19 +9,3 @@ html {
   background-color: #FEFEF6;
   scroll-behavior: smooth;
 }
-
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-track {
-  background: #FEFEF6;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #EAA800;
-  border-radius: 10rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #FFD976;
-}

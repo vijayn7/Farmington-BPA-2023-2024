@@ -8,7 +8,7 @@ const ButtonGroup = () => {
   };
 
   return (
-    <div className="hidden md:flex font-bold">
+    <div className="flex font-bold">
         <div>
       <button
         className={`px-4 py-2 ${activeButton === 'button1' ? 'bg-secondary' : 'bg-primary'}`}

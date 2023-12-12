@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import BackToTopButton from "./components/BackToTopButton";
+import Homepage from "./pages/Homepage";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Menu from "./components/Menu";
+import Mission from "./components/Mission";
 import Navbar from "./components/Navbar";
 import Catering from "./pages/Catering";
-import Homepage from "./pages/Homepage";
-import Locations from "./pages/Locations";
-import Order from "./pages/Order";
 
 const App = () => {
   return (
@@ -21,7 +22,6 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-      <BackToTopButton />
     </div>
   );
 };
