@@ -4,8 +4,11 @@ import Menu from "../components/Menu"
 
 const Order = () => {
 
+    const selectedItems = [];
+
     const handleCardClick = (cardId) => {
-        console.log("Card Clicked in Order! Card ID:", cardId);
+        selectedItems.push(cardId)
+        console.log(selectedItems);
     };
 
     return (
