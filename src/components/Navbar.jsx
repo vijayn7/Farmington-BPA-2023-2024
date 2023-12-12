@@ -42,7 +42,7 @@ const Navbar = () => {
                                         className="hover:text-primary"
                                         onClick={toggleMobileMenu}
                                     >
-                                        Menu
+                                        Home
                                     </Link>
                                 </li>
                                 <li>
@@ -77,7 +77,7 @@ const Navbar = () => {
 
                         {/* Desktop Menu */}
                         <div className="hidden lg:flex container justify-center items-center mx-auto space-x-8">
-                            <Link to="/" className="ml-0 hover:text-primary">Menu</Link>
+                            <Link to="/" className="ml-0 hover:text-primary">Home</Link>
                             <Link to="/orders" className="hover:text-primary">Order</Link>
                             <Link to="/"><img src={logo} className="h-16" alt="Logo" /></Link>
                             <Link to="/locations" className="hover:text-primary">Locations</Link>
