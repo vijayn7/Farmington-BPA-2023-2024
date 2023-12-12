@@ -1,12 +1,10 @@
 import React from "react";
-import Homepage from "./pages/Homepage";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Menu from "./components/Menu";
-import Mission from "./components/Mission";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import BackToTopButton from "./components/BackToTopButton";
 import Navbar from "./components/Navbar";
-import Catering from "./pages/Catering";
+import Homepage from "./pages/Homepage";
+import Locations from "./pages/Locations";
+import Order from "./pages/Order";
 
 const App = () => {
   return (
@@ -15,13 +13,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route index element={<Homepage />} />
-            <Route path="menu" element={<Menu />} />
-            <Route path="mission" element={<Mission />} />
-            <Route path="catering" element={<Catering />} />
-
+            <Route path="locations" element={<Locations />} />
+            <Route path="orders" element={<Order />} />
           </Route>
         </Routes>
       </BrowserRouter>
+      <BackToTopButton />
     </div>
   );
 };

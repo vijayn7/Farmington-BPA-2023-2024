@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 import { logo } from "../components/Data";
-import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
         <>
             <nav className="mb-24">
@@ -85,5 +91,5 @@ const Navbar = () => {
         </>
     );
 };
-``
+
 export default Navbar;

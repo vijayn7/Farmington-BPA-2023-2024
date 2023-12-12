@@ -9,7 +9,7 @@ const Cards = ({ activeTab, onClickCard }) => {
     const filteredItems = selectedOption === "All" ? menuItems : menuItems.filter(item => item.category === selectedOption);
 
     return (
-        <div className="section m-8" id="recipe">
+        <div className="section m-8">
             <div className="flex flex-col items-center">
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
                     {filteredItems.map((item) => {
