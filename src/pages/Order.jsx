@@ -1,12 +1,16 @@
 import React from "react";
 import Footer from "../components/Footer";
-import OrderMenu from "../components/Menu"
+import Menu from "../components/Menu"
 
 const Order = () => {
 
+    const handleCardClick = (cardId) => {
+        console.log("Card Clicked in Order! Card ID:", cardId);
+    };
+
     return (
         <div>
-            {/* <OrderMenu onSelectionChange={handleSelectionChange}/> */}
+            <Menu onClickCard={handleCardClick} />
             <Footer />
         </div>
     );
