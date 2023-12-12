@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu"
+import ItemView from "../components/ItemView";
 
 const Order = () => {
 
@@ -13,6 +14,7 @@ const Order = () => {
 
     return (
         <div>
+            <ItemView />
             <Menu onClickCard={handleCardClick} />
             <Footer />
         </div>
