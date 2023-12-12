@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 import { logo } from "../components/Data";
-import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,6 +14,7 @@ const Navbar = () => {
             <nav className="mb-24">
                 <header className="bg-backgroundColor fixed top-0 w-full h-24 z-50 border-b-2 border-black">
                     <div className="container flex justify-between items-center mx-auto p-3 relative">
+                        
                         {/* Logo and Toggle Button */}
                         <div className="flex items-center lg:hidden">
                             <Link to="/" className="hover:text-primary">
@@ -46,7 +47,7 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        to="/"
+                                        to="/orders"
                                         className="hover:text-primary"
                                         onClick={toggleMobileMenu}
                                     >
@@ -75,13 +76,13 @@ const Navbar = () => {
                         </div>
 
                         {/* Desktop Menu */}
-                            <div className="hidden lg:flex container justify-center items-center mx-auto space-x-8">
-                                <Link to="/" className="ml-0 hover:text-primary">Menu</Link>
-                                <Link to="/" className="hover:text-primary">Order</Link>
-                                <Link to="/"><img src={logo} className="h-16" alt="Logo" /></Link>
-                                <Link to="/locations" className="hover:text-primary">Locations</Link>
-                                <Link to="/" className="hover:text-primary">Catering</Link>
-                            </div>
+                        <div className="hidden lg:flex container justify-center items-center mx-auto space-x-8">
+                            <Link to="/" className="ml-0 hover:text-primary">Menu</Link>
+                            <Link to="/orders" className="hover:text-primary">Order</Link>
+                            <Link to="/"><img src={logo} className="h-16" alt="Logo" /></Link>
+                            <Link to="/locations" className="hover:text-primary">Locations</Link>
+                            <Link to="/" className="hover:text-primary">Catering</Link>
+                        </div>
                     </div>
                 </header>
             </nav>
