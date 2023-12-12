@@ -1,13 +1,10 @@
 import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import BackToTopButton from "./components/BackToTopButton";
+import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Locations from "./pages/Locations";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Menu from "./components/Menu";
-import Mission from "./components/Mission";
-import Navbar from "./components/Navbar";
-import BackToTopButton from "./components/BackToTopButton"
+import Order from "./pages/Order";
 
 const App = () => {
   return (
@@ -17,6 +14,7 @@ const App = () => {
           <Route path="/" element={<Navbar />}>
             <Route index element={<Homepage />} />
             <Route path="locations" element={<Locations />} />
+            <Route path="orders" element={<Order />} />
           </Route>
         </Routes>
       </BrowserRouter>
