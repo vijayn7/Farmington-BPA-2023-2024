@@ -12,7 +12,7 @@ const Navbar = () => {
                         <a href="#" className="hover:text-primary">Order</a>
                         <Link to="/"><img src={logo} class="h-16" alt="Logo" /></Link>
                         <a href="#" className="hover:text-primary">Locations</a>
-                        <a href="#" className="hover:text-primary">Catering</a>
+                        <Link to="/Catering" className="hover:text-primary">Catering</Link>
                     </div>
                 </header>
             </nav>
