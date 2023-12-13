@@ -81,7 +81,7 @@ const Navbar = () => {
                             <Link to="/orders" className="hover:text-primary">Order</Link>
                             <Link to="/"><img src={logo} className="h-16" alt="Logo" /></Link>
                             <Link to="/locations" className="hover:text-primary">Locations</Link>
-                            <Link to="/" className="hover:text-primary">Catering</Link>
+                            <Link to="/catering" className="hover:text-primary">Catering</Link>
                         </div>
                     </div>
                 </header>

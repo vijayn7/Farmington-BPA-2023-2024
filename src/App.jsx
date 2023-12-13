@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Locations from "./pages/Locations";
 import Order from "./pages/Order";
+import Catering from "./pages/Catering";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
             <Route index element={<Homepage />} />
             <Route path="locations" element={<Locations />} />
             <Route path="orders" element={<Order />} />
+            <Route path="catering" element={<Catering />} />
           </Route>
         </Routes>
       </BrowserRouter>
