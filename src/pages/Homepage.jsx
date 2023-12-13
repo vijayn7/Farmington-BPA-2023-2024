@@ -9,9 +9,7 @@ const Homepage = () => {
   return (
     <div>
       <Home />
-      <div id="menu">
-        <Menu />
-      </div>
+      <Menu />
       <Founders />
       <Mission />
       <Footer />
