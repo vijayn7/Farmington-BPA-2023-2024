@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer"
 
 export const Catering = () => {
     return (
@@ -82,7 +83,7 @@ export const Catering = () => {
                         </div>
                 </form>
             </div>
-
+        <Footer />
         </div>
     );
 }
