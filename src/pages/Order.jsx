@@ -7,6 +7,8 @@ const Order = () => {
 
     const selectedItems = [];
 
+    
+
     const handleCardClick = (cardId) => {
         selectedItems.push(cardId)
         console.log(selectedItems);
