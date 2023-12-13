@@ -7,7 +7,17 @@ const Navbar = () => {
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
+        if (isMobileMenuOpen) {
+        scrollToTop();
     };
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
 
     return (
         <>
@@ -65,7 +75,7 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        to="/"
+                                        to="/catering"
                                         className="hover:text-primary"
                                         onClick={toggleMobileMenu}
                                     >
@@ -77,11 +87,11 @@ const Navbar = () => {
 
                         {/* Desktop Menu */}
                         <div className="hidden lg:flex container justify-center items-center mx-auto space-x-8">
-                            <Link to="/" className="ml-0 hover:text-primary">Home</Link>
-                            <Link to="/orders" className="hover:text-primary">Order</Link>
-                            <Link to="/"><img src={logo} className="h-16" alt="Logo" /></Link>
-                            <Link to="/locations" className="hover:text-primary">Locations</Link>
-                            <Link to="/catering" className="hover:text-primary">Catering</Link>
+                            <Link to="/" className="ml-0 hover:text-primary" onClick={scrollToTop}>Home</Link>
+                            <Link to="/orders" className="hover:text-primary" onClick={scrollToTop}>Order</Link>
+                            <Link to="/"><img src={logo} className="h-16" alt="Logo" onClick={scrollToTop}/></Link>
+                            <Link to="/locations" className="hover:text-primary" onClick={scrollToTop}>Locations</Link>
+                            <Link to="/catering" className="hover:text-primary" onClick={scrollToTop}>Catering</Link>
                         </div>
                     </div>
                 </header>
