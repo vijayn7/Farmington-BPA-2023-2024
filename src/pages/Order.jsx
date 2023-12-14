@@ -5,22 +5,22 @@ import Footer from "../components/Footer";
 
 const Order = () => {
 
-    const selectedItems = [];
+    var selectedItems = [];
 
-  const handleCardClick = (cardId) => {
-    if (!selectedItems.includes(cardId)) {
-        selectedItems.push(cardId);
-    }
-    console.log(selectedItems);
-  };
+    const handleCardClick = (cardId) => {
+        if (!selectedItems.includes(cardId)) {
+            selectedItems.push(cardId);
+        }
+        console.log(selectedItems);
+    };
 
-  return (
-    <div>
-      <ItemView items={selectedItems} />
-      <Menu onClickCard={handleCardClick} />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <ItemView items={selectedItems}/>
+            <Menu onClickCard={handleCardClick} />
+            <Footer />
+        </div>
+    );
 };
 
 export default Order;
