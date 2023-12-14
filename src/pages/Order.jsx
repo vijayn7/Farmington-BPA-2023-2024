@@ -1,26 +1,26 @@
-import React from "react";
-import Footer from "../components/Footer";
-import Menu from "../components/Menu"
+import React, { useState } from "react";
 import ItemView from "../components/ItemView";
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 
 const Order = () => {
 
     const selectedItems = [];
 
-    
+  const handleCardClick = (cardId) => {
+    if (!selectedItems.includes(cardId)) {
+        selectedItems.push(cardId);
+    }
+    console.log(selectedItems);
+  };
 
-    const handleCardClick = (cardId) => {
-        selectedItems.push(cardId)
-        console.log(selectedItems);
-    };
-
-    return (
-        <div>
-            <ItemView />
-            <Menu onClickCard={handleCardClick} />
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <ItemView items={selectedItems} />
+      <Menu onClickCard={handleCardClick} />
+      <Footer />
+    </div>
+  );
 };
 
 export default Order;
