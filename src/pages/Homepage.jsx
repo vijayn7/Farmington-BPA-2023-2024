@@ -10,8 +10,7 @@ const Homepage = () => {
     <div>
       <Home />
       <Menu />
-      <Founders />
-      <Mission />
+      
       <Footer />
     </div>
   );

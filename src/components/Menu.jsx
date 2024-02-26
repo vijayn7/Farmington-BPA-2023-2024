@@ -16,10 +16,10 @@ const Menu = ({ onClickCard }) => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col justify-left items-left lg:px-32 px-5 pt-20" id="menu">
-            <h1 className="text-[6rem] text-center md:text-left">Menu</h1>
-            <ButtonGroup />
-            <div className="mt-8">
+        <div className="min-h-screen flex flex-col justify-left items-left lg:px-32  pt-16" id="menu">
+            <h1 className="font-bold text-[4rem] text-center md:text-left pl-[13.7rem]">Explore Our Menu!</h1>
+           
+            <div className="mt-8 pl-[13.7rem]">
                 <Tabs activeTab={activeTab} onTabChange={handleTabChange} />
             </div>
             <Cards activeTab={activeTab} onClickCard={onClickCard || handleCardClick} />
