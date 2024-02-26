@@ -61,7 +61,7 @@ const Footer = () => {
             <nav className=" flex flex-col gap-3 text-gray-300">
               <a
                 className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
-                href="/"
+                href="https://www.facebook.com/michiganbpa/"
               >
                 <i class="fab fa-facebook-f pr-2"></i>
                 Facebook
