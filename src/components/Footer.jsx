@@ -5,81 +5,101 @@ import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white rounded-t-3xl mt-8 md:mt-0 border-t-8 border-primary">
-      <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
-        <div className=" w-full md:w-1/4">
-          <h1 className=" font-bold text-xl pb-4 text-brightColor">Game Day Grill</h1>
-          <p className=" text-sm">
-            Game On, Grill On
-          </p>
+    <div className="bg-black text-white  mt-8 md:mt-0 ">
+      <div className="flex flex-col md:flex-row justify-between pt-8 pb-24 px-32 ">
+        <div className="grid justify-center">
+        <img src="src/assets/Game Day Grill white.png" className="h-20" alt="Logo" />
+        
+         
+          
         </div>
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0 text-brightColor">Links</h1>
-          <nav className=" flex flex-col gap-2">
+          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0 text-brightColor ">Links </h1>
+          <nav className=" flex flex-col gap-3 text-gray-300">
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              Dishes
-            </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              About
-            </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
+              <i class="fas fa-arrow-right pr-2"></i>
               Menu
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              Reviews
+              <i class="fas fa-arrow-right pr-2"></i>
+              Catering
+            </a>
+            <a
+              className=" hover:text-brightColor transition-all cursor-pointer"
+              href="/"
+            >
+              <i class="fas fa-arrow-right pr-2"></i>
+              Order
+            </a>
+            <a
+              className=" hover:text-brightColor transition-all cursor-pointer"
+              href="/"
+            >
+              <i class="fas fa-arrow-right pr-2"></i>
+              About
             </a>
           </nav>
         </div>
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0 text-brightColor">Menu</h1>
-          <nav className=" flex flex-col gap-2">
+          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0 text-brightColor">Social Media</h1>
+          <nav className=" flex flex-col gap-3 text-gray-300">
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              Our Dishes
+<i class="fab fa-facebook-f pr-2"></i>          
+  Facebook
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="https://twitter.com/MichiganBPA"
             >
-              Premium Menu
+              <i class="fab fa-twitter pr-2"></i>
+              Twitter
+            </a>
+            <a
+              className=" hover:text-brightColor transition-all cursor-pointer"
+              href="https://www.instagram.com/farmington_bpa/"
+            >
+              <i class="fab fa-instagram pr-2"></i>
+              Instagram
             </a>
           </nav>
         </div>
         <div>
           <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0 text-brightColor">Contact Us</h1>
-          <nav className=" flex flex-col gap-2">
+          <nav className=" flex flex-col gap-3 text-gray-300">
+            <a
+              className=" hover:text-brightColor transition-all cursor-pointer"
+              href="mailto:FarmingtonHSBPA@gmail.com"
+            >
+              <i class="fas fa-envelope pr-2"></i>
+              FarmingtonHSBPA@gmail.com
+            </a>
+            
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              GameDayGrill@email.com
+              <i class="fas fa-phone  pr-2"></i>
+              (248) 489-3455
             </a>
+            
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="https://maps.google.com/maps?q=farminton+high+school,Farmington"
             >
-              +1 248 123 5678
+              <i
+                        class="fas fa-map-marker-alt pr-2"></i>
+              32000 Shiawassee St, Farmington, MI 48336
             </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Social media
-            </a>
+            
           </nav>
         </div>
       </div>
