@@ -5,7 +5,7 @@ const Tab = ({ label, isActive, onClick }) => {
 
   return (
     <div
-      className={` underline-tab px-4 py-2 mr-4 border-b-2 ${underlineColor}`}
+      className={` underline-tab px-1 py-2 mr-4 border-b-2 ${underlineColor}`}
       onClick={onClick}
     >
       {label}
@@ -20,7 +20,7 @@ const Tabs = ({ activeTab, onTabChange }) => {
 
   return (
     <div className="hidden md:flex">
-      <div className='bg-fillColor flex rounded-lg'>
+      <div className=' flex rounded-lg'>
         <Tab
           label="All"
           isActive={activeTab === 0}
