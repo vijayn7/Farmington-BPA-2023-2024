@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Footer from "../components/Footer";
-import Item from "../layouts/Item";
+import OrderItemsView from '../layouts/OrderItemsView';
 import ButtonGroup from "../layouts/ButtonGroup";
 import Tabs from "../layouts/Tabs";
-import Cards from "../layouts/Cards";
+import OrderPageCards from "../layouts/OrderPageCards";
 import { menuItems } from "../components/Data";
 
 const Order = () => {
@@ -33,18 +33,14 @@ const Order = () => {
 
     return (
         <div>
-            {filteredMenuItems.map((menuItem) => {
-                return (
-                    <Item key={menuItem.id} name={menuItem.itemName} />
-                );
-            })}
+            <OrderItemsView selected={filteredMenuItems} />
             <div className="min-h-screen flex flex-col justify-left items-left lg:px-32 px-5 pt-20" id="menu">
                 <h1 className="text-[6rem] text-center md:text-left">Menu</h1>
                 <ButtonGroup />
                 <div className="mt-8">
                     <Tabs activeTab={activeTab} onTabChange={handleTabChange} />
                 </div>
-                <Cards activeTab={activeTab} onClickCard={handleCardClick} />
+                <OrderPageCards activeTab={activeTab} onClickCard={handleCardClick} />
             </div>
             <Footer />
         </div>
