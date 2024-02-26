@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ButtonGroup from "../layouts/ButtonGroup";
 import Tabs from "../layouts/Tabs";
-import Cards from "../layouts/Cards"
+import HomePageCards from "../layouts/HomePageCards"
 
 const Menu = ({ onClickCard }) => {
 
@@ -22,7 +22,7 @@ const Menu = ({ onClickCard }) => {
             <div className="mt-8 pl-[13.7rem]">
                 <Tabs activeTab={activeTab} onTabChange={handleTabChange} />
             </div>
-            <Cards activeTab={activeTab} onClickCard={onClickCard || handleCardClick} />
+            <HomePageCards activeTab={activeTab} onClickCard={onClickCard || handleCardClick} />
         </div>
     );
 };

@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./OrderPageCard";
 import { menuItems } from "../components/Data";
 
-const Cards = ({ activeTab, onClickCard }) => {
+const OrderPageCards = ({ activeTab, onClickCard }) => {
     const tabOptions = ["All", "Appetizer", "Entrees", "Soup & Salad", "Sides", "Dessert"];
     const selectedOption = tabOptions[activeTab];
 
@@ -23,4 +23,4 @@ const Cards = ({ activeTab, onClickCard }) => {
     );
 };
 
-export default Cards;
+export default OrderPageCards;
