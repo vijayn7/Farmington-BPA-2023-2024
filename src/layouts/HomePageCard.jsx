@@ -26,10 +26,9 @@ const Card = (props) => {
             <p className="text-[0.85rem] opacity-70 mb-4 px-4 pt-0.5">
                 {props.description}
             </p>
-            <div className="flex items-center justify-center mb-6 space-x-36">
-                <Link to="/order" onClick={scrollToTop}><button className=" bg-transparent hover:bg-[#EAA800] text-[#EAA800] font-semibold hover:text-white py-2 px-4 border border-[#EAA800] hover:border-transparent rounded-full ">Begin Your Order</button></Link>
+            <div className="items-center justify-center mb-6 grid grid-cols-2 pl-10 space-x-10">
+                <Link to="/order" onClick={scrollToTop}><button className="bg-transparent hover:bg-[#EAA800] text-[#EAA800] font-semibold hover:text-white py-2 px-4 border border-[#EAA800] hover:border-transparent rounded-full ">Begin Your Order</button></Link>
                 <h1 className="text-gray-600 text-lg">${props.price}</h1>
-
             </div>
         </div>
     );
