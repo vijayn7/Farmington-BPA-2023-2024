@@ -24,7 +24,7 @@ const Footer = () => {
               onClick={scrollToTop}
                 to="/order" className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
               >
-                <i class="fas fa-arrow-right pr-2"></i>
+                <i className="fas fa-arrow-right pr-2"></i>
                 Menu
               </Link>
               <Link
@@ -32,7 +32,7 @@ const Footer = () => {
               to="/catering"
                 className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
               >
-                <i class="fas fa-arrow-right pr-2"></i>
+                <i className="fas fa-arrow-right pr-2"></i>
                 Catering
               </Link>
               <Link
@@ -40,7 +40,7 @@ const Footer = () => {
               to="/order"
                 className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
               >
-                <i class="fas fa-arrow-right pr-2"></i>
+                <i className="fas fa-arrow-right pr-2"></i>
                 Order
               </Link>
               <Link
@@ -48,7 +48,7 @@ const Footer = () => {
               to="/about"
                 className="hover:text-primary hover:text-md hover:text-brightColor transition-all cursor-pointer"
               >
-                <i class="fas fa-arrow-right pr-2"></i>
+                <i className="fas fa-arrow-right pr-2"></i>
                 About
               </Link>
             </nav>
@@ -60,21 +60,21 @@ const Footer = () => {
                 className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
                 href="https://www.facebook.com/michiganbpa/"
               >
-                <i class="fab fa-facebook-f pr-2"></i>
+                <i className="fab fa-facebook-f pr-2"></i>
                 Facebook
               </a>
               <a
                 className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
                 href="https://twitter.com/MichiganBPA"
               >
-                <i class="fab fa-twitter pr-2"></i>
+                <i className="fab fa-twitter pr-2"></i>
                 Twitter
               </a>
               <a
                 className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
                 href="https://www.instagram.com/farmington_bpa/"
               >
-                <i class="fab fa-instagram pr-2"></i>
+                <i className="fab fa-instagram pr-2"></i>
                 Instagram
               </a>
             </nav>
@@ -86,7 +86,7 @@ const Footer = () => {
                 className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
                 href="mailto:FarmingtonHSBPA@gmail.com"
               >
-                <i class="fas fa-envelope pr-2"></i>
+                <i className="fas fa-envelope pr-2"></i>
                 FarmingtonHSBPA@gmail.com
               </a>
 
@@ -94,7 +94,7 @@ const Footer = () => {
                 className="hover:text-primary hover:text-brightColor transition-all cursor-pointer"
                 href="/"
               >
-                <i class="fas fa-phone  pr-2"></i>
+                <i className="fas fa-phone  pr-2"></i>
                 (248) 489-3455
               </a>
 
@@ -103,7 +103,7 @@ const Footer = () => {
                 href="https://maps.google.com/maps?q=farminton+high+school,Farmington"
               >
                 <i
-                  class="fas fa-map-marker-alt pr-2"></i>
+                  className="fas fa-map-marker-alt pr-2"></i>
                 32000 Shiawassee St, Farmington, MI 48336
               </a>
 
