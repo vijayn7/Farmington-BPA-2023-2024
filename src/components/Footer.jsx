@@ -1,8 +1,5 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import { BsFacebook } from "react-icons/bs";
-import { RiTwitterXFill } from "react-icons/ri";
-import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
 
