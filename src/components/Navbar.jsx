@@ -9,23 +9,23 @@ const Navbar = () => {
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
         if (isMobileMenuOpen) {
-        scrollToTop();
-    };
+            scrollToTop();
+        };
     };
 
     const scrollToTop = () => {
         window.scrollTo({
-          top: 0,
-          behavior: 'smooth',
+            top: 0,
+            behavior: 'smooth',
         });
-      };
+    };
 
     return (
         <>
             <nav className="mb-24">
                 <header className="bg-backgroundColor fixed top-0 w-full h-24 z-50 border-b-2 border-black">
                     <div className="container flex justify-between items-center mx-auto p-3 relative">
-                        
+
                         {/* Logo and Toggle Button */}
                         <div className="flex items-center lg:hidden">
                             <Link to="/" className="hover:text-primary">
@@ -88,12 +88,12 @@ const Navbar = () => {
 
                         {/* Desktop Menu */}
                         <div className="hidden lg:flex container justify-center items-center mx-auto space-x-8">
-                        <Link to="/"><img src={logo} className="h-16" alt="Logo" onClick={scrollToTop}/></Link>
+                            <Link to="/"><img src={logo} className="h-16" alt="Logo" onClick={scrollToTop} /></Link>
                             <Link to="/" className="ml-0 hover:text-primary" onClick={scrollToTop}>Home</Link>
                             <Link to="/order" className="hover:text-primary" onClick={scrollToTop}>Order</Link>
                             <Link to="/locations" className="hover:text-primary" onClick={scrollToTop}>Locations</Link>
                             <Link to="/catering" className="hover:text-primary" onClick={scrollToTop}>Catering</Link>
-                        <Link to="/"><img src={cart} className="h-8" alt="Logo" onClick={scrollToTop}/></Link>
+                            <Link to="/order"><img src={cart} className="h-8" alt="Logo" onClick={scrollToTop} /></Link>
                         </div>
                     </div>
                 </header>
