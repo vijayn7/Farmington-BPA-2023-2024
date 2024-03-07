@@ -29,13 +29,14 @@ const Card = (props) => {
       <p className="text-[0.85rem] opacity-70 mb-4 px-4 pt-0.5">
         {props.description}
       </p>
-      <div className="flex items-center justify-center mb-6">
+      <div className="items-center justify-center mb-6 grid grid-cols-2 pl-10 space-x-10">
         <button
           onClick={handleClick}
           className="bg-transparent hover:bg-[#EAA800] text-[#EAA800] font-semibold hover:text-white py-2 px-4 border border-[#EAA800] hover:border-transparent rounded-full"
         >
           Add to Order
         </button>
+        <h1 className="text-gray-600 text-lg">${props.price}</h1>
       </div>
       {addedToOrder ? (
         <div className="bg-[#EAA800] text-white px-4 py-2 rounded-md fixed top-8 right-4 z-50 animate-bounce">
