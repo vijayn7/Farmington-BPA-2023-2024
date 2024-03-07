@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Item from "./Item";
-import { FaXmark } from "react-icons/fa6";
+import { FaDribbble, FaXmark } from "react-icons/fa6";
 
 const OrderItemsView = (props) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -33,11 +33,14 @@ const OrderItemsView = (props) => {
                     <div>
                         <FaXmark className="text-2xl ml-auto mr-12 mt-12" onClick={handleXmarkClick} />
                         <h1 className="text-l font-bold text-left ml-8 mt-8">Review Your Cart</h1>
-                        {props.selected.map((menuItem) => {
-                            return (
+                        {props.selected.length > 0 ? (
+                            props.selected.map((menuItem) => (
                                 <Item key={menuItem.id} name={menuItem.itemName} price={menuItem.price} img={menuItem.img} />
-                            );
-                        })}
+                            ))
+                        ) : (
+                            <div className="text-sm text-left ml-8 mt-4">Please selected an Item</div>
+                        )}
+
                         <hr className="w-[22vw] h-0.5 bg-gray-300 mt-8 mx-auto"></hr>
                         <div className="flex justify-between">
                             <h1 className="mt-6 ml-8"> Subtotal</h1>
