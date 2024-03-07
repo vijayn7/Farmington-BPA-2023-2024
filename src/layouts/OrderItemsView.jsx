@@ -24,8 +24,8 @@ const OrderItemsView = (props) => {
     return (
         <>
 
-            <section class="fixed pt-14 z-20 pl-0 " id="filter-btn" onClick={handleOpenButtonClick}>
-                <button class="transition-colors w-[100%] text-lg text-black bg-primary py-4 pr-6 pl-2 rounded-r-3xl hover:bg-secondary hover:text-white">Open Cart</button>
+            <section className="fixed pt-14 z-20 pl-0 " id="filter-btn" onClick={handleOpenButtonClick}>
+                <button className="transition-colors w-[100%] text-lg text-black bg-primary py-4 pr-6 pl-2 rounded-r-3xl hover:bg-secondary hover:text-white">Open Cart</button>
             </section>
 
             {isVisible && (
@@ -35,7 +35,7 @@ const OrderItemsView = (props) => {
                         <h1 className="text-l font-bold text-left ml-8 mt-8">Review Your Cart</h1>
                         {props.selected.length > 0 ? (
                             props.selected.map((menuItem) => (
-                                <Item key={menuItem.id} name={menuItem.itemName} price={menuItem.price} img={menuItem.img} />
+                                <Item key={menuItem.id} name={menuItem.itemName} price={menuItem.price} img={menuItem.img} id={menuItem.id} onRemoveItem={props.onRemoveItem} />
                             ))
                         ) : (
                             <div className="text-sm text-left ml-8 mt-4">Please selected an Item</div>

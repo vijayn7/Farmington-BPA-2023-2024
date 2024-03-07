@@ -22,8 +22,14 @@ const Order = () => {
             // Use set function to update state and trigger re-render
             setSelectedItems(prevSelectedItems => [...prevSelectedItems, cardId]);
         }
-        console.log(selectedItems);
+        // console.log(selectedItems);
     };
+
+    const handleRemoveItem = (itemId) => {
+        setSelectedItems((prevSelectedItems) =>
+          prevSelectedItems.filter((item) => item !== itemId)
+        );
+      };
 
     const [activeTab, setActiveTab] = useState(0);
 
@@ -33,7 +39,7 @@ const Order = () => {
 
     return (
         <div>
-            <OrderItemsView selected={filteredMenuItems} />
+            <OrderItemsView selected={filteredMenuItems} onRemoveItem={handleRemoveItem}/>
             <div className="min-h-screen flex flex-col justify-left items-left lg:px-32  pt-16" id="menu">
             <h1 className="font-bold text-[4rem] text-center md:text-left pl-[13.7rem]">Explore Our Menu!</h1>
            
