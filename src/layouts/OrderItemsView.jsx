@@ -25,7 +25,7 @@ const OrderItemsView = (props) => {
         <>
 
             <section className="fixed pt-14 z-20 pl-0 " id="filter-btn" onClick={handleOpenButtonClick}>
-                <button className="transition-colors w-[100%] text-lg text-black bg-primary py-4 pr-6 pl-2 rounded-r-3xl hover:bg-secondary hover:text-white">Open Cart</button>
+                <button className="transition-colors w-[100%] text-lg text-black bg-fillColor py-4 pr-6 pl-2 rounded-r-3xl border border-black hover:bg-secondary hover:text-white">Open Cart</button>
             </section>
 
             {isVisible && (
