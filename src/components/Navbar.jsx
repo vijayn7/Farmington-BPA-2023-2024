@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="mb-24">
-                <header className="bg-backgroundColor fixed top-0 w-full h-24 z-50 border-b-2 border-black">
+                <header className="bg-white fixed top-0 w-full h-24 z-50 border-b-2 border-black">
                     <div className="container flex justify-between items-center mx-auto p-3 relative">
 
                         {/* Logo and Toggle Button */}
