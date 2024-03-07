@@ -3,7 +3,7 @@ import Item from "./Item";
 import { FaXmark } from "react-icons/fa6";
 
 const OrderItemsView = (props) => {
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(false);
 
     function getsubtotal() {
         let subtotal = 0.00;
@@ -17,8 +17,17 @@ const OrderItemsView = (props) => {
         setIsVisible(false);
     };
 
+    const handleOpenButtonClick = () => {
+        setIsVisible(!isVisible);
+    }
+
     return (
         <>
+
+            <section class="fixed pt-14 z-20 pl-0 " id="filter-btn" onClick={handleOpenButtonClick}>
+                <button class="transition-colors w-[100%] text-lg text-black bg-primary py-4 pr-6 pl-2 rounded-r-3xl hover:bg-secondary hover:text-white">Open Cart</button>
+            </section>
+
             {isVisible && (
                 <div className="flex flex-col overflow-scroll justify-between w-[24vw] top-0 right-0 bottom-0 bg-white h-[100vh] fixed z-50 rounded-tl-[2rem] border-black border-l-[1px] border-t-[1px]">
                     <div>
