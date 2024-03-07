@@ -6,13 +6,15 @@ import { cart } from "../components/Data";
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+    // Function to toggle the mobile menu and scroll to the top if closing
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
         if (isMobileMenuOpen) {
             scrollToTop();
-        };
+        }
     };
 
+    // Function to scroll to the top of the page
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -83,18 +85,41 @@ const Navbar = () => {
                                         Catering
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link
+                                        to="/aboutUs"
+                                        className="hover:text-primary"
+                                        onClick={toggleMobileMenu}
+                                    >
+                                        About Us
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
 
                         {/* Desktop Menu */}
                         <div className="hidden lg:flex container justify-center items-center mx-auto space-x-8">
-                            <Link to="/"><img src={logo} className="h-16" alt="Logo" onClick={scrollToTop} /></Link>
-                            <Link to="/" className="ml-0 hover:text-primary" onClick={scrollToTop}>Home</Link>
-                            <Link to="/order" className="hover:text-primary" onClick={scrollToTop}>Order</Link>
-                            <Link to="/locations" className="hover:text-primary" onClick={scrollToTop}>Locations</Link>
-                            <Link to="/catering" className="hover:text-primary" onClick={scrollToTop}>Catering</Link>
-                            <Link to="/aboutUs" className="hover:text-primary" onClick={scrollToTop}>About Us</Link>
-                            <Link to="/order"><img src={cart} className="h-8" alt="Cart" onClick={scrollToTop} /></Link>
+                            <Link to="/">
+                                <img src={logo} className="h-16" alt="Logo" onClick={scrollToTop} />
+                            </Link>
+                            <Link to="/" className="ml-0 hover:text-primary" onClick={scrollToTop}>
+                                Home
+                            </Link>
+                            <Link to="/order" className="hover:text-primary" onClick={scrollToTop}>
+                                Order
+                            </Link>
+                            <Link to="/locations" className="hover:text-primary" onClick={scrollToTop}>
+                                Locations
+                            </Link>
+                            <Link to="/catering" className="hover:text-primary" onClick={scrollToTop}>
+                                Catering
+                            </Link>
+                            <Link to="/aboutUs" className="hover:text-primary" onClick={scrollToTop}>
+                                About Us
+                            </Link>
+                            <Link to="/order">
+                                <img src={cart} className="h-8" alt="Cart" onClick={scrollToTop} />
+                            </Link>
                         </div>
                     </div>
                 </header>

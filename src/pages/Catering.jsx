@@ -1,18 +1,30 @@
+import React from "react";
+
+// Importing the Footer component
 import Footer from "../components/Footer";
 
-export default function Example() {
+// Functional component for the Catering page
+export default function Catering() {
   return (
     <>
+      {/* Main container with padding */}
       <div className="pt-16 pb-16">
         <div className="flex justify-center pb-10">
+          {/* Heading for the Catering page */}
           <h2 className="text-4xl font-semibold leading-7 mx-auto text-black">Catering</h2>
         </div>
+        
+        {/* Form for catering order */}
         <form className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32">
           <div className="space-y-12 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
-
+            
+            {/* Form section with borders */}
             <div className="border-b border-gray-900/10 pb-12">
-
+              
+              {/* Grid layout for form fields */}
               <div className="mt-10 grid grid-cols-4 gap-x-6 gap-y-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
+                
+                {/* Individual form fields */}
                 <div className="col-span-full sm:col-span-full">
                   <label htmlFor="first-name" className="block text-xs font-medium leading-6 text-gray-600">
                     First name
@@ -236,11 +248,12 @@ export default function Example() {
                     />
                   </div>
                 </div>
+                
               </div>
             </div>
-
           </div>
-
+          
+          {/* Buttons for submission and cancellation */}
           <div className="pb-10 mt-6 flex flex-col-reverse items-center justify-end gap-y-4 sm:flex-row sm:justify-between">
             <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
               Cancel
@@ -254,6 +267,8 @@ export default function Example() {
           </div>
         </form>
       </div>
+      
+      {/* Footer component */}
       <Footer />
     </>
   );

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 
+// Individual tab component
 const Tab = ({ label, isActive, onClick }) => {
+  // Determine the underline color based on the tab's activity
   const underlineColor = isActive ? 'border-primary bg-[#f9f4dd]' : 'border-transparent';
 
   return (
     <div
-      className={` underline-tab px-1 py-2 mr-4 border-b-2 ${underlineColor}`}
+      className={`underline-tab px-1 py-2 mr-4 border-b-2 ${underlineColor}`}
       onClick={onClick}
     >
       {label}
@@ -13,14 +15,18 @@ const Tab = ({ label, isActive, onClick }) => {
   );
 };
 
+// Tabs component for managing and displaying tab items
 const Tabs = ({ activeTab, onTabChange }) => {
+  // Handler function for tab click event
   const handleTabClick = (tabNumber) => {
     onTabChange(tabNumber);
   };
 
   return (
     <div className="hidden md:flex">
-      <div className=' flex rounded-lg'>
+      {/* Container for displaying individual tabs */}
+      <div className='flex rounded-lg'>
+        {/* Individual tabs for different categories */}
         <Tab
           label="All"
           isActive={activeTab === 0}
@@ -56,4 +62,5 @@ const Tabs = ({ activeTab, onTabChange }) => {
   );
 };
 
+// Exporting the Tabs component as the default export
 export default Tabs;
