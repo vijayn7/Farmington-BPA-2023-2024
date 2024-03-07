@@ -93,7 +93,8 @@ const Navbar = () => {
                             <Link to="/order" className="hover:text-primary" onClick={scrollToTop}>Order</Link>
                             <Link to="/locations" className="hover:text-primary" onClick={scrollToTop}>Locations</Link>
                             <Link to="/catering" className="hover:text-primary" onClick={scrollToTop}>Catering</Link>
-                            <Link to="/order"><img src={cart} className="h-8" alt="Logo" onClick={scrollToTop} /></Link>
+                            <Link to="/aboutUs" className="hover:text-primary" onClick={scrollToTop}>About Us</Link>
+                            <Link to="/order"><img src={cart} className="h-8" alt="Cart" onClick={scrollToTop} /></Link>
                         </div>
                     </div>
                 </header>

@@ -22,8 +22,14 @@ const Order = () => {
             // Use set function to update state and trigger re-render
             setSelectedItems(prevSelectedItems => [...prevSelectedItems, cardId]);
         }
-        console.log(selectedItems);
+        // console.log(selectedItems);
     };
+
+    const handleRemoveItem = (itemId) => {
+        setSelectedItems((prevSelectedItems) =>
+          prevSelectedItems.filter((item) => item !== itemId)
+        );
+      };
 
     const [activeTab, setActiveTab] = useState(0);
 
@@ -33,13 +39,13 @@ const Order = () => {
 
     return (
         <div>
-            <OrderItemsView selected={filteredMenuItems} />
-            <div className="min-h-screen flex flex-col justify-left items-left lg:px-32 px-5 pt-20" id="menu">
-                <h1 className="text-[6rem] text-center md:text-left">Menu</h1>
-                <ButtonGroup />
-                <div className="mt-8">
-                    <Tabs activeTab={activeTab} onTabChange={handleTabChange} />
-                </div>
+            <OrderItemsView selected={filteredMenuItems} onRemoveItem={handleRemoveItem}/>
+            <div className="min-h-screen flex flex-col justify-left items-left lg:px-32  pt-16" id="menu">
+            <h1 className="font-bold text-[4rem] text-center md:text-left pl-[13.7rem]">Explore Our Menu!</h1>
+           
+            <div className="mt-8 pl-[13.7rem]">
+                <Tabs activeTab={activeTab} onTabChange={handleTabChange} />
+            </div>
                 <OrderPageCards activeTab={activeTab} onClickCard={handleCardClick} />
             </div>
             <Footer />
