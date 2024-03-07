@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import { whiteLogo } from "../components/Data"
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between pt-8 pb-24 px-32">
           {/* Logo Section */}
           <div className="grid justify-center">
-            <img src="src/assets/whiteLogo.png" className="h-20" alt="Logo" />
+            <img src={whiteLogo} className="h-20" alt="Logo" />
           </div>
 
           {/* Links Section */}

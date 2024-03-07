@@ -46,11 +46,13 @@ import vijayImage from "../assets/img/Vijay.png"
 import aidenImage from "../assets/img/Aiden.png"
 
 import brand from "../assets/brand.jpg"
+import whiteLogoimg from "../assets/whiteLogo.png";
 
 import cartSVG from "../assets/img/cart.png"
 
 export const logo = brand;
 export const cart = cartSVG;
+export const whiteLogo = whiteLogoimg;
 
 export const foundersData = [
   {
