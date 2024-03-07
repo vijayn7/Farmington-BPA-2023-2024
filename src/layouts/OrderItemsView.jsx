@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import Item from "./Item";
-import { FaDribbble, FaXmark } from "react-icons/fa6";
+import React, { useState } from 'react';
+import Item from './Item';
+import { FaDribbble, FaXmark } from 'react-icons/fa6';
+import PaymentForm from './PaymentForm'; 
 
 const OrderItemsView = (props) => {
     const [isVisible, setIsVisible] = useState(false);
+    const [showPaymentForm, setShowPaymentForm] = useState(false);
 
     function getsubtotal() {
         let subtotal = 0.00;
@@ -20,6 +22,10 @@ const OrderItemsView = (props) => {
     const handleOpenButtonClick = () => {
         setIsVisible(!isVisible);
     }
+
+    const handleCheckoutClick = () => {
+        setShowPaymentForm(true);
+    };
 
     return (
         <>
@@ -47,9 +53,28 @@ const OrderItemsView = (props) => {
                             <h1 className="text-sm justify-self-end font-regular text-gray-600 mr-5 mt-6 ">${(Math.round(getsubtotal() * 100) / 100).toFixed(2)}</h1>
                         </div>
                     </div>
-                    <button className="mx-20 mb-12 mt-12 h-16 align-bottom bottom-0 bg-transparent hover:bg-[#EAA800] text-[#EAA800] font-semibold hover:text-white py-2 px-4 border border-[#EAA800] hover:border-transparent rounded-full ">Checkout</button>
+                    <button
+                        className="mx-20 mb-12 mt-12 h-16 align-bottom bottom-0 bg-transparent hover:bg-[#EAA800] text-[#EAA800] font-semibold hover:text-white py-2 px-4 border border-[#EAA800] hover:border-transparent rounded-full"
+                        onClick={handleCheckoutClick}
+                    >
+                        Checkout
+                    </button>
                 </div>
+
+                
             )}
+             {showPaymentForm && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 z-50">
+          <PaymentForm
+            onClose={() => setShowPaymentForm(false)}
+            onPaymentSubmit={() => {
+              
+              setShowPaymentForm(false);
+            }}
+          />
+        </div>
+      )}
+
         </>
     );
 };
