@@ -12,7 +12,7 @@ export default function Example() {
 
             <div className="border-b border-gray-900/10 pb-12">
 
-              <div className="mt-10 grid  gap-x-6 gap-y-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
+              <div className="mt-10 grid grid-cols-4 gap-x-6 gap-y-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
                 <div className="col-span-full sm:col-span-full">
                   <label htmlFor="first-name" className="block text-xs font-medium leading-6 text-gray-600">
                     First name
