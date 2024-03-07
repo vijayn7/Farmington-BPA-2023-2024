@@ -12,8 +12,8 @@ export default function Example() {
 
             <div className="border-b border-gray-900/10 pb-12">
 
-              <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
-                <div className="sm:col-span-4">
+              <div className="mt-10 grid  gap-x-6 gap-y-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
+                <div className="col-span-full sm:col-span-full">
                   <label htmlFor="first-name" className="block text-xs font-medium leading-6 text-gray-600">
                     First name
                   </label>
@@ -28,7 +28,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="sm:col-span-4">
+                <div className="col-span-full sm:col-span-full">
                   <label htmlFor="last-name" className="block text-xs font-medium leading-6 text-gray-600">
                     Last name
                   </label>
@@ -43,7 +43,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="sm:col-span-4">
+                <div className="col-span-full sm:col-span-full">
                   <label htmlFor="email" className="block text-xs font-medium leading-6 text-gray-600">
                     Email address
                   </label>
@@ -58,7 +58,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="sm:col-span-4">
+                <div className="col-span-full sm:col-span-full">
                   <label htmlFor="country" className="block text-xs font-medium leading-6 text-gray-600">
                     Phone Number
                   </label>
@@ -105,7 +105,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="sm:col-span-4">
+                <div className="col-span-full sm:col-span-full">
                   <label htmlFor="region" className="block text-xs font-medium leading-6 text-gray-600">
                     State / Province
                   </label>
@@ -119,7 +119,7 @@ export default function Example() {
                     />
                   </div>
                 </div>
-                <div className="sm:col-span-4">
+                <div className="col-span-full sm:col-span-full">
 
                   <label htmlFor="location" className="block text-xs font-medium leading-6 text-gray-600">
 
@@ -157,7 +157,7 @@ export default function Example() {
 
                 </div>
 
-                <div className="sm:col-span-4">
+                <div className="col-span-full sm:col-span-full">
                   <label htmlFor="date" className="block text-xs font-medium leading-6 text-gray-600">
                     Date of Order
                   </label>
@@ -172,7 +172,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="sm:col-span-4">
+                <div className="col-span-full sm:col-span-full">
 
                   <label htmlFor="location" className="block text-xs font-medium leading-6 text-gray-600">
 
@@ -222,7 +222,7 @@ export default function Example() {
 
                 </div>
 
-                <div className="sm:col-span-full">
+                <div className="col-span-full sm:col-span-full">
                   <label htmlFor="first-name" className="block text-xs font-medium leading-6 text-gray-600">
                     Let us know about your order
                   </label>
