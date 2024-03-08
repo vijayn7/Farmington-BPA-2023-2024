@@ -88,7 +88,7 @@ export const locationData = [
   {
     id: 3,
     name: "Detroit",
-    address: "311 Maynard St, Ann Arbor, MI 48104",
+    address: "4265 Woodward Ave, Detroit, MI 48201",
     phone: "(248) 489-3455"
   },
   {
