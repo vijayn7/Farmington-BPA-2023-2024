@@ -259,7 +259,7 @@ export default function Catering() {
               Cancel
             </button>
             <button
-              type="submit"
+              type="button"
               className="w-full sm:w-auto rounded-md bg-secondary px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Submit
